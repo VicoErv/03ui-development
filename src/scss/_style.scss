@@ -1,0 +1,55 @@
+.card {
+  border: none;
+  border-radius: .975rem;
+
+  color: $white;
+  background-color: #2b3033;
+
+  &-header {
+    border-bottom: none;
+
+    &-logo {
+      width: 50px;
+      height: 50px;
+      background-color: #3c4247;
+      border-radius: .975rem;
+      padding: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-menu {
+      margin-right: -20px;
+
+      color: #6a6d70;
+      @include transition(color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out);
+
+      svg {
+        font-size: 50px;
+      }
+
+      &:hover {
+        color: darken(#6a6d70, 10);
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 0.275rem 1.05rem;
+  font-size: 0.75rem;
+}
+
+.progress {
+  height: 0.475rem;
+
+  border-radius: 1rem;
+
+  background-color: #3e4246;
+
+  &-bar {
+    border-radius: 1rem;
+  }
+}
